@@ -1,15 +1,19 @@
-function reverseWords(s) {
-    const words = s.split(' ');
-    const reversedWords = words.map(word => {
+function rw(s) {
+    let words = s.split(' ');
+    let rm = words.map(word => {
       return word.split('').reverse().join('');
     });
-    const reversedString = reversedWords.join(' ');
-    return reversedString;
+    let rs = rm.join(' ');
+    return rs;
   }
-  const input1 = "Let's take LeetCode contest";
-  const output1 = reverseWords(input1);
-  console.log(output1); 
-  const input2 = "Mr Ding";
-  const output2 = reverseWords(input2);
-  console.log(output2); 
+
+  let x = "Let's take LeetCode contest";
+  let y = rw(x);
+
+  console.log(y);
+
+  let w = "Mr Ding";
+  let v = rw(w);
+
+  console.log(v);
   

@@ -1,6 +1,6 @@
 function frequencySort(s) {
     
-    const frequencyMap = new Map();
+    let frequencyMap = new Map();
     for (let char of s) {
       frequencyMap.set(char, (frequencyMap.get(char) || 0) + 1);
     }
