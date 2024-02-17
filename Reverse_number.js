@@ -19,38 +19,38 @@
 
 
 
-// let reverse = function(x) 
-// {  
-//    if(x > 0)
-//    {   
-//     x= x + " ";
-//     return x.split("").reverse().join(""); 
-//    } else
-//     if (x<0)
-//    { 
-//      x = x + " ";
-//       return "-"+ x.slice(1,-1).split("").reverse().join("");
+let reverse = function(x) 
+{  
+   if(x > 0)
+   {   
+    x= x + " ";
+    return x.split("").reverse().join(""); 
+   } else
+    if (x<0)
+   { 
+      x = x + ("");
+      return "-"+ x.slice(1).split("").reverse().join("");
      
-//    }
-//  };
+   }
+ };
 
-   //  let z = reverse(-987);
+    let z = reverse(-987);
 
-   //  console.log(z);
+    console.log(z);
 
-    let   reverse = function(x) {
-      let rev = 0;
-      const sign = x < 0 ? -1 : 1;
-      x = Math.abs(x);
-      while (x !== 0) {
-        const digit = x % 10;
-        rev = rev * 10 + digit;
-        x = Math.floor(x / 10);
-      }
-      const result = sign * rev;
-      if (result > 2 ** 31 - 1 || result < -(2 ** 31)) return 0;
-      return result;
-    };
+    // let   reverse = function(x) {
+    //   let rev = 0;
+    //   const sign = x < 0 ? -1 : 1;
+    //   x = Math.abs(x);
+    //   while (x !== 0) {
+    //     const digit = x % 10;
+    //     rev = rev * 10 + digit;
+    //     x = Math.floor(x / 10);
+    //   }
+    //   const result = sign * rev;
+    //   if (result > 2 ** 31 - 1 || result < -(2 ** 31)) return 0;
+    //   return result;
+    // };
   
-    let x = -321446
-    console.log(reverse(x));
+    // let x = -321446
+    // console.log(reverse(x));
